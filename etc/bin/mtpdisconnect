@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $(fusermount -u ~/MTP) ]; then
+   echo "Error: No device are connected"
+   exit
+fi
+
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ (mtp-detect) ]]
+then
+  jmtpfs ~/MTP
+  echo "Success: Device connected"
+else
+  echo "Error: Device not detected"
+fi
+
