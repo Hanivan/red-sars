@@ -53,8 +53,3 @@ mpd
 
 # Reload dunst
 ~/.config/dunst/dtest
-
-# Custom Script
-export PATH=$PATH:~/Data/bin
-export GOPATH=$HOME/.config/go
-export NVM_DIR="$HOME/.nvm"
