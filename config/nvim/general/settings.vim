@@ -64,15 +64,18 @@ function! CompileCpp()
 endfunction
 nnoremap <F5> :call CompileCpp()<CR>
 
-" For Bracey
-nnoremap <M-l> :Bracey<CR>
+" For Live Server
+function! LiveServer()
+   exec ":term live-server . &"
+endfunction
+nnoremap <M-l> :call LiveServer()<CR>
 
 " Auto Reload Bracey
-function! SaveAndReload()
-   exec ':w'
-   exec ':BraceyReload'
-endfunction
-nnoremap <c-s> :call SaveAndReload()<CR>
+" function! SaveAndReload()
+"    exec ':w'
+"    exec ':BraceyReload'
+" endfunction
+" nnoremap <c-s> :call SaveAndReload()<CR>
 
 " For Autocompiling Sass
 autocmd bufwritepost [^_]*.sass,[^_]*.scss  silent exec "!sass %:p %:r.css"
