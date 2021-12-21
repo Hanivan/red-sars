@@ -27,7 +27,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
 
    " Ext For Developer
-Plug 'turbio/bracey.vim' " Live Server
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
